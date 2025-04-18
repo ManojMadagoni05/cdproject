@@ -1,0 +1,24 @@
+variable "aws_region" {
+  default = "us-east-1"
+}
+
+variable "instance_type" {
+  default = "t2.micro"
+}
+
+variable "ami_id" {
+  default = "ami-0c55b159cbfafe1f0" # Ubuntu AMI (update for your region)
+}
+
+variable "app_port" {
+  default = 80
+}
+
+variable "vpc_id" {
+  description = "Your default VPC ID"
+}
+
+variable "public_key_path" {
+  description = "git@github.com:ManojMadagoni05/cdproject.git"
+  default     = "~/.ssh/id_rsa.pub"
+}
